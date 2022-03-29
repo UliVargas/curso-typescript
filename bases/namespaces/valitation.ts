@@ -1,0 +1,11 @@
+ namespace Validation {
+   export  const validateText = (text: string): boolean => {
+     return (text.length > 3) ? true : false
+   }
+
+   export const valiadteDate = (myDate: Date): boolean  => {
+      return ( isNaN(myDate.valueOf()) ) 
+        ? false 
+        : true
+   }
+ }
